@@ -1,4 +1,4 @@
-import { swatch, fileIcon, ai, logoShirt, stylishShirt } from "../assets";
+import { swatch, fileIcon, ai, cancel_button, logoShirt, stylishShirt } from "../assets";
 
 export const EditorTabs = [
   {
@@ -13,6 +13,10 @@ export const EditorTabs = [
     name: "aipicker",
     icon: ai,
   },
+  {
+    name: "cancel",
+    icon: cancel_button,
+  }
 ];
 
 export const FilterTabs = [

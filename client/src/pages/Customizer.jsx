@@ -8,7 +8,7 @@ import {download} from '../assets';
 import {downloadCanvasToImage, reader} from '../config/helpers';
 import {EditorTabs, FilterTabs, DecalTypes} from '../config/constants';
 import {fadeAnimation, slideAnimation} from '../config/motion';
-import {AIPicker, ColorPicker, CustomButton, FilePicker, Tab} from '../components';
+import {AIPicker, ColorPicker, CustomButton, FilePicker, Cancel, Tab} from '../components';
 
 
 const Customizer = () => {
@@ -43,6 +43,8 @@ switch (activeEditorTab) {
       generatingImg={generatingImg}
       handleSubmit={handleSubmit}
       />  
+      case 'cancel':
+      return <Cancel/>  
       default:
         return null;
 }

@@ -15,13 +15,18 @@ import {
 const Home = () => {
 
     const snap = useSnapshot(state);
+    function refreshPage() {
+        window.location.reload(false);
+      }
 
   return (
     <AnimatePresence>
         {snap.intro &&(
             <motion.section className="home" {...slideAnimation('left')} >
 <motion.header  {...slideAnimation('down')}>
-    <img  src='./threejs.png' alt='logo' className='w-8 h-8 object-contain' />
+    <img  src='./tshirt_customizer_logo.png' alt='logo' className='w-16 h-16 object-contain'
+    style={{cursor:"pointer"}} 
+    onClick={refreshPage}/>
 </motion.header>
 
 <motion.div className='home-content' {...headContainerAnimation}>
