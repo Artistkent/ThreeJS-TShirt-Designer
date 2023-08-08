@@ -116,7 +116,7 @@ input[type="file"] {
   slign-items:center;
   justify-content:center;
   background-color:white;
-  z-index:10;
+  z-index:99;
 }
 
 @keyframes spinner {
@@ -132,8 +132,7 @@ input[type="file"] {
   position:absolute;
   width: 40vh;
   height: 40vh;
-  top:calc(50% - 20vh);
-  left:60%;
+  align-self:center;
  
   border: 3vw solid #f3f3f3; /* Light grey */
   border-top: 3vw solid #383636; /* Black */

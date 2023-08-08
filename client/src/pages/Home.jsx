@@ -31,8 +31,8 @@ const Home = () => {
 
 <motion.div className='home-content' {...headContainerAnimation}>
 <motion.div {...headTextAnimation} >
-<h1 className='head-text'>
-PLUS <br className='xl:block hidden' /> <span style={{color:state.color}} >ULTRA!</span>
+<h1 className='head-text drop-shadow-md'>
+PLUS <br className='xl:block hidden' /> <span  style={{color:state.color} } >ULTRA!</span>
 </h1>
 </motion.div>
 
