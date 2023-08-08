@@ -95,3 +95,48 @@ input[type="file"] {
     color: #000000;
     opacity: 1;
 }
+
+
+/*loading spinner */
+
+#loader_spin{
+  position:absolute;
+  width:100%;
+  height:100vh;
+  display:flex;
+  slign-items:center;
+  justify-content:center;
+}
+
+.spinner-container{
+  position:absolute;
+  width:100%;
+  height:100vh;
+  display:flex;
+  slign-items:center;
+  justify-content:center;
+  background-color:white;
+  z-index:10;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  position:absolute;
+  width: 40vh;
+  height: 40vh;
+  top:calc(50% - 20vh);
+  left:60%;
+ 
+  border: 3vw solid #f3f3f3; /* Light grey */
+  border-top: 3vw solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}

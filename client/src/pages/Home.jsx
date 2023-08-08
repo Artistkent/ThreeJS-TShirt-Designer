@@ -32,7 +32,7 @@ const Home = () => {
 <motion.div className='home-content' {...headContainerAnimation}>
 <motion.div {...headTextAnimation} >
 <h1 className='head-text'>
-LET'S <br className='xl:block hidden' /> DO IT.
+PLUS <br className='xl:block hidden' /> <span style={{color:state.color}} >ULTRA!</span>
 </h1>
 </motion.div>
 
